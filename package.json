@@ -1,0 +1,31 @@
+{
+  "name": "strapi-plugin-migrations",
+  "version": "0.0.1",
+  "description": "Init or update your data easly with a version controller.",
+  "strapi": {
+    "name": "Migrations",
+    "icon": "database",
+    "description": "Init or update your data easly with a version controller."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "strapi-helper-plugin": "3.5.4"
+  },
+  "author": {
+    "name": "Tony Deplanque",
+    "email": "deplanque.tony@gmail.com",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "Tony Deplanque",
+      "email": "deplanque.tony@gmail.com",
+      "url": ""
+    }
+  ],
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

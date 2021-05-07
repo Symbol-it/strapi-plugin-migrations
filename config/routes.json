@@ -1,0 +1,15 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/informations",
+      "handler": "Migrations.getMigrationsInformations",
+      "config": {
+        "policies": [
+          "admin::isAuthenticatedAdmin",
+          ["admin::hasPermissions", ["plugins::migrations.informations.read"]]
+        ]
+      }
+    }
+  ]
+}
