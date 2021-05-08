@@ -1,11 +1,12 @@
 {
   "name": "strapi-plugin-migrations",
   "version": "0.0.1",
-  "description": "Init or update your data easly with a version controller.",
+  "description": "Initialize or update your data easly with a version controller.",
+  "homepage": "https://github.com/Symbol-it/strapi-plugin-migrations",
   "strapi": {
     "name": "Migrations",
     "icon": "database",
-    "description": "Init or update your data easly with a version controller."
+    "description": "Initialize or update your data easly with a version controller."
   },
   "dependencies": {},
   "devDependencies": {
