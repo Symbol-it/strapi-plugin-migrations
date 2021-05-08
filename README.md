@@ -5,7 +5,7 @@ If you want initialize or update your data in Strapi, this plugin is made for yo
 ## ⏳ Installation
 
 ```bash
-npm i -S @symbol-it/strapi-plugin-migrations
+npm i -S strapi-plugin-migrations
 ```
 
 - After installation you have to build Strapi:
