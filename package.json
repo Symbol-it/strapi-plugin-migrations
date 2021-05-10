@@ -1,8 +1,11 @@
 {
   "name": "strapi-plugin-migrations",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Initialize or update your data easly with a version controller.",
   "homepage": "https://github.com/Symbol-it/strapi-plugin-migrations",
+  "bugs": {
+    "url": "https://github.com/Symbol-it/strapi-plugin-migrations/issues"
+  },
   "strapi": {
     "name": "Migrations",
     "icon": "database",
@@ -23,6 +26,13 @@
       "email": "deplanque.tony@gmail.com",
       "url": ""
     }
+  ],
+  "keywords": [
+    "strapi",
+    "plugin",
+    "migration",
+    "data",
+    "versioning"
   ],
   "engines": {
     "node": ">=10.16.0 <=14.x.x",

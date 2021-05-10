@@ -126,7 +126,7 @@ Wait for Strapi to restart or do it manually. I advise to turn off Strapi during
 
 You should see a migration report in your terminal ⬇️
 
-![Migration result](/docs/img/migration_result.png)
+![Migration result](https://github.com/Symbol-it/strapi-plugin-migrations/raw/main/docs/img/migration_result.png)
 
 If your restart your Strapi, the file `v1_edit_reset_password_url.js` will not be played again.
 
