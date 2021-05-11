@@ -18,7 +18,7 @@ module.exports = {
 
     strapi.log.info(`Current migration version : v${currentVersion}`)
 
-    const dir = this.getPathFolder()
+    let dir = this.getPathFolder()
     const files = await fs.readdirSync(dir)
       .filter((file) =>
         this.isFile(path.join(dir, file)) &&
@@ -42,6 +42,10 @@ module.exports = {
       strapi.log.info('No files found. Migration skipped.')
     } else {
       for (const file of files) {
+        if (process.platform === 'win32' || process.platform === 'win64') {
+          dir = 'file:///' + dir.replace(/\\/g, "/");
+        }
+
         const filePath = path.join(dir, file);
         strapi.log.info(`File: ${file} in progress...`)
 
