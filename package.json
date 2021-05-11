@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-migrations",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Initialize or update your data easly with a version controller.",
   "homepage": "https://github.com/Symbol-it/strapi-plugin-migrations",
   "bugs": {
@@ -45,7 +45,7 @@
     "strapi-migrations-data"
   ],
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
+    "node": ">=13.2.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
