@@ -7,12 +7,11 @@ module.exports = async () => {
       category: 'migrations',
       displayName: 'Access the Migration Informations page',
       uid: 'informations.read',
-      pluginName: 'migrations',
-    },
-  ];
+      pluginName: 'migrations'
+    }
+  ]
 
-  const { actionProvider } = strapi.admin.services.permission;
-  actionProvider.register(actions);
+  await strapi.admin.services.permission.actionProvider.registerMany(actions);
 
   await strapi.plugins.migrations.services.migrations.migrations();
 };

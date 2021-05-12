@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-migrations",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Initialize or update your data easly with a version controller.",
   "homepage": "https://github.com/Symbol-it/strapi-plugin-migrations",
   "bugs": {

@@ -22,6 +22,30 @@ npm run develop --watch-admin
 
 The tab Migrations should appear in the parameters section of Strapi.
 
+### ⚠️ The current version of this plugin is working for Strapi version 4.6.0 or more.
+ If you want to use it for a lower version you can put this code in `/extensions/migrations/config/functions/bootstrap.js`
+
+```javascript
+'use strict';
+
+module.exports = async () => {
+  const actions = [
+    {
+      section: 'settings',
+      category: 'migrations',
+      displayName: 'Access the Migration Informations page',
+      uid: 'informations.read',
+      pluginName: 'migrations',
+    },
+  ];
+
+  const { actionProvider } = strapi.admin.services.permission;
+  actionProvider.register(actions);
+
+  await strapi.plugins.migrations.services.migrations.migrations();
+};
+```
+
 ## 💡 Why use it ?
 
 Currently with Strapi, the only way to initialize your data is to use bootstrap files, but they are launched on every reboot.
